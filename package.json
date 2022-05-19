@@ -1,0 +1,19 @@
+{
+  "name": "homework10-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashchenkov/AdvancedJS10.2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashchenkov/AdvancedJS10.2/issues"
+  },
+  "homepage": "https://github.com/yashchenkov/AdvancedJS10.2#readme"
+}
