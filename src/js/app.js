@@ -1,5 +1,6 @@
 import GameSavingLoader from './GameSavingLoader';
 
 (async () => {
-	GameSavingLoader.load();
+	const obj = await GameSavingLoader.load();
+	console.log(obj);
 })();
