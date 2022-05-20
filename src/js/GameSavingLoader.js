@@ -6,8 +6,8 @@ export default class GameSavingLoader {
 
   static  load() {
     const a = await read();
-    const b = await json(a);
-    const obj = await JSON.parse(b);
+    const b =  json(a);
+    const obj =  JSON.parse(b);
     return new GameSaving(obj.id, obj.created, obj.userInfo);
     ;
   }
