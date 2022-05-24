@@ -5,10 +5,11 @@ import GameSaving from './GameSaving';
 export default class GameSavingLoader {
 
   static  load() {
-    const a = await read();
-    const b =  json(a);
-    const obj =  JSON.parse(b);
-    return new GameSaving(obj.id, obj.created, obj.userInfo);
-    ;
+    return (async () => {
+      const a = await read();
+      const b = await json(a);
+      const j =  JSON.parse(b);
+      return new GameSaving(j.id, j.created, j.userInfo);
+    })();
   }
 }
